@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-gyhf
+  namespace: mvp-demo-dev-namespace-hznl-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:4dee3a4be96b03c62e20c1e539ed1bc65b975e00018f312b86924e4b84ee69f7
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
